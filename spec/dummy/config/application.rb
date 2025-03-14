@@ -1,6 +1,11 @@
 require_relative "boot"
 
 require "rails/all"
+require 'dotenv'
+
+# Loads the Postgres creds so that tests can run in specified database
+env_file = File.expand_path('../../../.env', File.dirname(__FILE__))
+Dotenv.load(env_file) if File.exist?(env_file)
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

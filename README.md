@@ -1,28 +1,12 @@
 # TripleBakedCore
-Short description and motivation.
+The next iteration of TwiceBaked -> https://bitbucket.org/moser-inc/tb_core
 
-## Usage
-How to use my plugin.
+# Test setup
 
-## Installation
-Add this line to your application's Gemfile:
+1. Look at `.env.EXAMPLE` to see the environment variables you need to set up your Postgres database. Make `.env` file with those vars.
+2. Set up your test database with `RAILS_ENV=test rake db:setup` 
+3. `rspec`
 
-```ruby
-gem "triple_baked_core"
-```
-
-And then execute:
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install triple_baked_core
-```
-
-## Contributing
-Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
