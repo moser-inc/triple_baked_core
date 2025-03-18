@@ -27,5 +27,8 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "dotenv", ">= 3.1.7"
   gem.add_development_dependency "factory_bot_rails", ">= 6.4"
+  gem.add_development_dependency "jsbundling-rails", "~> 1.3"
   gem.add_development_dependency "rspec-rails", "~> 7.1"
+  gem.add_development_dependency "stimulus-rails", "~> 1.3"
+  gem.add_development_dependency "turbo-rails", "~> 2.0"
 end

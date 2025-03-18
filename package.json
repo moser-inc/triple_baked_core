@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.13",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "5.3.3",
+    "dotenv": "^16.4.7",
+    "esbuild-sass-plugin": "^3.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.1"
+  },
+  "scripts": {
+    "build": "node ./build.js",
+    "watch": "node ./build.js --watch"
+  },
+  "type": "module"
+}

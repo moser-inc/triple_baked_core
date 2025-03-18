@@ -18,7 +18,8 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :app %>
+    <%= stylesheet_link_tag "triple_baked_core/styles/triplebaked_admin_light" %>
+    <%= javascript_include_tag "triple_baked_core/triplebaked_admin", "data-turbo-track": "reload", type: "module" %>
   </head>
 
   <body>

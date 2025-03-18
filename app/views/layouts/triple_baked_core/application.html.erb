@@ -7,9 +7,12 @@
 
   <%= yield :head %>
 
-  <%= stylesheet_link_tag    "triple_baked_core/application", media: "all" %>
+  <%= stylesheet_link_tag "triple_baked_core/styles/admin_light" %>
+  <%= javascript_include_tag "triple_baked_core/admin", "data-turbo-track": "reload", type: "module" %>
 </head>
 <body>
+
+<h1>TRIPLE BAKED CORE</h1>
 
 <%= yield %>
 
