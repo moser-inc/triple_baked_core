@@ -11,13 +11,14 @@ Gem::Specification.new do |gem|
   gem.license     = "MIT"
   gem.post_install_message = "Don't forget to run tb_core:install:migrations to add any new migrations."
 
+  gem.metadata["homepage_uri"] = gem.homepage
+
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  gem.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  #TODO: gem.metadata["allowed_push_host"] = "http://mygemserver.com'"
 
-  gem.metadata["homepage_uri"] = gem.homepage
-  gem.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  gem.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  #TODO: gem.metadata["source_code_uri"] = "Put your gem's public repo URL here."
+  #TODO: gem.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
 
   gem.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
