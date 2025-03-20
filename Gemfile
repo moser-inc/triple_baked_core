@@ -3,9 +3,11 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in triple_baked_core.gemspec.
 gemspec
 
+gem 'nokogiri', '~> 1.18.5'
 gem "puma"
 gem "pg"
 gem "propshaft"
+gem "pry-rails"
 
 # TODO remove authlogic and consider replacing with built in Rails authentication
 # Have project maintainers forgotten about this project and doing new releases?
