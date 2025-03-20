@@ -1,7 +1,15 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
+require 'factory_bot_rails'
+require 'pry'
+
 require File.expand_path('dummy/config/environment', __dir__)
+Dir[File.join(File.dirname(__FILE__), 'support', '/**/*.rb')].each { |f| require(f) }
+
+# FactoryBot by default wants to look in `spec/dummy/factories`, `spec/dummy/spec/factories`. 🤷‍♂️
+Dir[File.join(File.dirname(__FILE__), 'factories', '/**/*.rb')].each { |f| require(f) }
+
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 # Uncomment the line below in case you have `--require rails_helper` in the `.rspec` file

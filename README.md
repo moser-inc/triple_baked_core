@@ -39,7 +39,7 @@ should be able to find the
 Note that because this is a gem, `assets/builds/*` gets committed to the repo! In your parent app, if you are using
 Propshaft with `jsbundling-rails`, the `assets/builds/*` should not be committed because it won't get used in 
 production. In production, the `rake assets:precompile` stage will take the contents of your app's assets, and
-the assets here in `app/assets/builds/triple_baked_core/*`, and put them in the public/assets folder with
+the assets here in `app/assets/builds/tb_core/*`, and put them in the public/assets folder with
 version hashes appended to the file names. The public/assets folder should be served by your production web server. 
 
 

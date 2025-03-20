@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 end
 
 # Not using isolated namespace
-# TripleBakedCore::Engine.routes.draw do
+# TbCore::Engine.routes.draw do
 # end
