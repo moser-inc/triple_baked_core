@@ -38,6 +38,5 @@ if defined?(RSpec)
 end
 
 # Auto load the spud_user factory if FactoryBot is in use
-# require 'pry'
-# binding.pry
+#
 Dir[TbCore::Engine.root.join('spec/factories/spud_user_factories.rb')].each{ |f| require f } if defined?(FactoryBot)
