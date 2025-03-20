@@ -1,8 +1,8 @@
 require "rails_helper"
 
-RSpec.describe TripleBakedCore do
+RSpec.describe TbCore do
   it 'has a version number' do
-    expect(TripleBakedCore::VERSION).to be_present
+    expect(TbCore::VERSION).to be_present
     puts "Database: #{ENV['PG_TEST_DATABASE']}"
   end
 end

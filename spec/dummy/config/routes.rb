@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount TripleBakedCore::Engine => "/triple_baked_core"
+  mount TbCore::Engine => "/tb_core"
 end

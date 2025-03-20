@@ -9,4 +9,4 @@ test:
   password: <%= ENV['PGPASSWORD'] %>
   host: <%= ENV['PGHOST'] || 'localhost' %>
   port: <%= ENV['PGPORT'] || '5432' %>
-  database: <%= ENV['PG_TEST_DATABASE'] || 'triple_baked_core_test' %>
+  database: <%= ENV['PG_TEST_DATABASE'] || 'tb_core_test' %>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= TbCore.config.site_name %> Admin: Login</title>
+  <%= stylesheet_link_tag "tb_core/styles/admin_light" %>
+  <%= javascript_include_tag "tb_core/admin", "data-turbo-track": "reload", type: "module" %>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= yield :head %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<h1>TRIPLE BAKED CORE</h1>
+
+<%= yield %>
+
+</body>
+</html>
