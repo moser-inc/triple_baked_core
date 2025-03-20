@@ -1,8 +1,8 @@
-require_relative "lib/triple_baked_core/version"
+require_relative "lib/tb_core/version"
 
 Gem::Specification.new do |gem|
-  gem.name        = "triple_baked_core"
-  gem.version     = TripleBakedCore::VERSION
+  gem.name        = "tb_core"
+  gem.version     = TbCore::VERSION
   gem.authors     = [ "Winston Kotzan" ]
   gem.email       = [ "winston.kotzan@moserit.com" ]
   gem.homepage    = "https://github.com/moser-inc/triple_baked_core"
@@ -29,6 +29,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "factory_bot_rails", ">= 6.4"
   gem.add_development_dependency "jsbundling-rails", "~> 1.3"
   gem.add_development_dependency "rspec-rails", "~> 7.1"
+  gem.add_dependency "scrypt"
   gem.add_development_dependency "stimulus-rails", "~> 1.3"
   gem.add_development_dependency "turbo-rails", "~> 2.0"
 end

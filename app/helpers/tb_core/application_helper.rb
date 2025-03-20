@@ -1,4 +1,4 @@
-module TripleBakedCore
+module TbCore
   module ApplicationHelper
   end
 end

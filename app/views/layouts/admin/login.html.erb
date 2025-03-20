@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= TbCore.config.site_name %> Admin: Login</title>
+  <%= stylesheet_link_tag 'admin/core/application' %>
+  <%= javascript_include_tag 'admin/core/application' %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+
+<div class="container">
+  <div class="login-container col-md-6 col-md-offset-3">
+    <h1><%= @login_title || 'Login' %></h1>
+    <%= yield %>
+  </div>
+</div>
+
+</body>
+</html>

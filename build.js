@@ -39,7 +39,7 @@ const context = await esbuild.context({
     },
     entryPoints: ['app/javascript/admin.js', 'app/javascript/styles/admin_light.scss'],
     format: 'esm',
-    outdir: 'app/assets/builds/triple_baked_core',
+    outdir: 'app/assets/builds/tb_core',
     plugins: [
         sassPlugin(),
         watchPlugin
