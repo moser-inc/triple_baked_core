@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in triple_baked_core.gemspec.
 gemspec
 
-gem 'nokogiri', '~> 1.18.5'
+gem 'nokogiri', '~> 1.18.6'
 gem "puma"
 gem "pg"
 gem "propshaft"
